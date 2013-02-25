@@ -21,6 +21,11 @@
 
     for (var i = 0; i < letters.length; i += 1) {
       var letter = letters[i];
+      if (randInt(0, 2) === 0) {
+        letter = letter.toLowerCase();
+      } else {
+        letter = letter.toUpperCase();
+      }
       ransomNote += "%c" + letter;
       ransomStyles.push(getRandomRansomStyle(letter));
     }
@@ -53,7 +58,7 @@
   }
 
   function getRandomRansomMargin() {
-    return 'margin-right:' + randInt(0, 3);
+    return 'margin-right:' + randInt(0, 3) + 'px';
   }
 
   function randColor() {
