@@ -1,13 +1,160 @@
 <!DOCTYPE HTML>
 
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>console.ransom()</title>
-    <script type="text/javascript" src="http://raw.github.com/mchail/console.ransom/dist/console.ransom.min.js"></script>
-  </head>
-  <body>
-    UNDER CONSTRUCTION
-  </body>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>console.ransom()</title>
+		<link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/css/reset.css">
+		<link rel="stylesheet" href="/css/foundation.min.css">
+		<script type="text/javascript" src="http://raw.github.com/mchail/console.ransom/master/dist/console.ransom.min.js"></script>
+	</head>
+	<body>
+		<div id="ribbon">
+			<a href="https://github.com/mchail/console.ransom"><img style="position: fixed; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+		</div>
+		<section>
+			<header>
+				<h1>
+					Hold your javascript console ransom
+				</h1>
+			</header>
+			<p>
+				Is your javascript console misbehaving? Giving you shit about Access-Control-Allow-Origin, SyntaxErrors, and "undefined token" TypeErrors? It's time to fight back. Fight dirty. Take your browser hostage.
+			</p>
+			<p class="img">
+				<img src="/img/joker.png" alt="Ever dance with the devil in the pale moonlight?" />
+			</p>
+			<h4>
+				I'm in! How do I invoke this wizardry?
+			</h4>
+			<p>
+				Piece of cake.
+				<ol>
+					<li>
+						Install the
+						<a href="https://raw.github.com/mchail/console.ransom/master/dist/console.ransom.min.js">
+							production version
+						</a>
+						of console.ransom().
+					</li>
+					<li>
+						Anywhere you were planning on using
+						<b>
+							console.log()
+						</b>,
+						try out
+						<b>
+							console.ransom()
+						</b>
+						instead.
+					</li>
+				</ol>
+			</p>
+			<h4>
+				I want to try it right now!
+			</h4>
+			<p>
+				Brilliant! The script is installed on this very page.
+				<ol>
+					<li>
+						Open up your javascript console. If you're on Chrome, type ctrl+shft+J (or cmd+opt+J for Macs). In Firefox, hit the Firebug icon. If you aren't using Chrome or Firefox, open Chrome or Firefox, and repeat this step.
+					</li>
+					<li>
+						Type
+						<b>
+							console.ransom("Give me all your internets if you ever want to see your cat again");
+						</b>
+					</li>
+					<li>
+						Hit enter.
+					</li>
+				</ol>
+			</p>
+			<p>
+				Was it as awesome as you expected?
+			</p>
+			<h4>
+				How does it work?
+			</h4>
+			<p>
+				Feel free to peruse the
+				<a href="https://raw.github.com/mchail/console.ransom/master/lib/console.ransom.js">
+					development version
+				</a>
+				of the source code. This trick relies on a new feature in Chrome and Firebug that allows you to specify multiple styles on a single log statement. Here's what a really simple styled log statement would look like:
+			</p>
+			<p class="img">
+				<img src="/img/basic_example.png" alt="basic example of styled console logging" />
+			</p>
+			<p>
+				Each instance of
+				<b>
+					%c
+				</b>
+				marks a change in formatting. The format strings are applied in order. You can use most familiar CSS rules. console.ransom() relies on
+				<b>color</b>,
+				<b>background</b>,
+				<b>font-size</b>,
+				and
+				<b>margin</b>.
+			</p>
+			<p>
+				Check out Google's full documentation on 
+				<a href="https://developers.google.com/chrome-developer-tools/docs/console#styling_console_output_with_css">
+					styling console output with CSS
+				</a>.
+			</p>
+			<h4>
+				Browser Support
+			</h4>
+			<p>
+				As of February 2013, console.ransom() works in the latest Chrome (v 25) and Firebug (v 1.11.2 on Firefox 19.0). It does not work on Safari (v 6.0.2). I assume it doesn't work on Internet Exploder.
+			</p>
+			<footer>
+				Crafted by
+				<a href="http://mchail.com">Steve McHail</a>,
+				2013
+			</footer>
+		</section>
+		<style type="text/css">
+			body {
+				background: url('/img/paper_fibers.png');
+			}
+			h1, h2, h3, h4, h5, h6, body, p, article, section {
+				font-family: "Titillium Web", "Nunito", arial, helvetica, sans-serif;
+			}
+			p {
+				font-size: 18px;
+				margin: 40px 0;
+			}
+			h1 {
+				margin-top: 0px;
+			}
+			ol {
+				list-style: decimal;
+			}
+			ol li {
+				font-size: 16px;
+			}
+			.img {
+				margin: 0 auto;
+				text-align: center;
+			}
+			.img img {
+				padding: 10px;
+				border: 1px solid #dedede;
+			}
+			section {
+				max-width: 840px;
+				padding: 30px 50px;
+				margin: 0 auto;
+				background: white;
+			}
+		</style>
+		<script type="text/javascript">
+		</script>
+	</body>
 </html>
+
 
